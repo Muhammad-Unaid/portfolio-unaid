@@ -40,6 +40,37 @@
 			z-index: 10;
 
 		}
+		#pic {
+            /* border: 2px solid; */
+            object-fit: cover !important;
+            animation: animation 2s infinite;
+        }
+
+		#pic {
+            /* border: 2px solid; */
+            object-fit: cover !important;
+            animation: animation 2s infinite;
+        }
+
+        @keyframes animation {
+            0% {
+                transform: translateY(0);
+                
+            }
+
+            25% {
+                transform: translateX(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+                /* Move up by 10px */
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
 		#new{
 			
 			text-align: right;
@@ -53,7 +84,7 @@
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 	<div class="whatsapp_main">
-		<a href="https://wa.me/923202059130" target="_blank"><img src="images/whatsapp.png" width="60%" alt="whatsapp"></a>
+		<a href="https://wa.me/923202059130" target="_blank"><img src="images/whatsapp.png" width="60%" alt="whatsapp" id="pic"></a>
 		
 	</div>
 	
